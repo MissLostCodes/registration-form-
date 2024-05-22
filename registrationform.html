@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>registration form </title>
+<style>
+body {font-family: Arial, sans-serif;
+background-color: #f4f4f4; margin: auto; padding: 1px ;}
+form {height : 700px ; width: 700px; margin: auto;
+background: #fff; padding: 10px;
+border-radius: 8px; box-shadow: 0 0 10px rgba(90, 229, 122, 0.8);}
+h2 {text-align: center;}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="checkbox"],
+input[type="radio"] {
+width: 100%; padding: 6px;
+border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;}
+input[type="submit"] {width: 100%;
+background-color: #4caf50;
+color: white; padding: 14px 20px;
+margin: 8px 0; border-radius: 4px; cursor: pointer;}
+#gender {margin-bottom: 20px;}
+#language {margin-bottom: 20px;}
+#language input[type="checkbox"],
+#gender input[type="radio"] {margin-left: 10px;}
+</style> </head><body>
+<form  action="registrationform"  method="get">
+<h2>PLEASE REGISTER YOURSELF HERE </h2>
+<div>Username:<input type="text"  name="username" ><br>
+Password:<input type="password"  name="password"><br><br>
+<div id="age">
+Age : <input type = "text"  name = "age"><br></div>
+<div id="dob">Date Of Birth: <input type = "date"  name="dateofbirth"><br></div>
+<div id="gender"> Select Your Gender :<br>
+Male<input type = "radio" name ="gender" value="Male"><br>
+Female<input type = "radio" name ="gender" value="Female"><br>
+Other<input type = "radio" name ="gender" value="Other"><br> </div>
+<div id="language">Select the languages : <br>
+Python :<input type="checkbox"  name="python" value="on"><br>
+Java :<input type="checkbox"  name="java" value="on"><br>
+C++:<input type="checkbox"  name="cpp" value="on" ><br>
+C:<input type="checkbox"  name="c" value="on" ><br><br></div>
+<div id="login_button">
+<input type="submit" value="Login">
+</div></div>
+</form>
+</body>
+</html>
